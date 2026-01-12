@@ -17,15 +17,21 @@
 :root {
     --main: #7bf74d;
     --text: #f2f2f2;
+    --desc: #effae7ac;
     --light: #bdf8a4;
     --dark: #4e9e2f;
 }
 
 
 /* Main Framming */
+* {
+    scroll-behavior: smooth;
+    color: var(--desc);
+}
 body {
     margin: 0;
     background: #000;
+    font-family: "Saira", sans-serif;
 }
 .main-screen {
     position: relative;
@@ -36,10 +42,174 @@ body {
     min-height: 100vh;
     width: 100%;
     height: 100vh;
+
+    display: flex;
+    align-items: start;
 }
 .main-screen > .left {
-
+    flex: 1;
+    flex-basis: 40%;
+    padding: 15vh 10vw 5vh 5vw;
 }
 .main-screen > .right {
+    flex: 2;
+    flex-basis: 60%;
+    max-height: 100%;
+    overflow: auto;
+}
 
+.main-screen .personal-info {
+
+}
+.main-screen .personal-info .nickname {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fafff2df;
+    letter-spacing: 1.5px;    
+}
+.main-screen .personal-info .role {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #000;
+    background: linear-gradient(90deg, #7bf74d 0%, #93ee00 100%);
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+.main-screen .personal-info .summary {
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.main-screen .navigator {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 0 1rem;
+}
+.main-screen .navigator > .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.main-screen .navigator > .nav-link .line{
+    width: 30px;
+    height: 3px;
+    background: #bdf8a4ab;
+    transition: all .25s ease-in-out;
+}
+.main-screen .navigator > .nav-link span{
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f2f2f256;
+}
+.main-screen .navigator > .nav-link.bolded .line, .main-screen .navigator > .nav-link:hover .line{
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #7bf74d 0%, #93ee00 100%);
+}
+.main-screen .navigator > .nav-link.bolded span, .main-screen .navigator > .nav-link:hover span{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #7bf74d;
+}
+.main-screen .directions {
+    position: absolute;
+    bottom: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.main-screen .directions > .nav-link{
+
+}
+.main-screen .directions > .nav-link i{
+    font-size: 2.5rem;
+    color: #598049;
+}
+.main-screen .directions > .nav-link:hover i{
+    color: var(--main);
+}
+.main-screen .intro {
+    padding: 10vh 5vw 6vw 0vw;
+}
+.main-screen .intro p{
+    font-size: 1.125rem;
+}
+.main-screen .intro p b{
+    color: #7bf74d;
+    font-weight: 600;
+}
+
+.main-screen .experience {
+    padding: 10vh 2vw 6vw 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.main-screen .experience .exp-box {
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+    background: #59804914;
+    border-radius: 8px;
+}
+.main-screen .experience .exp-box .date{
+    flex-basis: 9rem;
+    min-width: 9rem;
+    flex: 1;
+    flex-wrap: nowrap;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: .375rem;
+
+
+}
+.main-screen .experience .exp-box .info{
+    
+}
+.main-screen .experience .exp-box .title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+.main-screen .experience .exp-box .company{
+    font-size: 1rem;
+    color: var(--main);
+}
+.main-screen .experience .exp-box .desc{
+    margin-top: .75rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.main-screen .experience .exp-box .badget-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.main-screen .experience .exp-box .badget-list .badget{
+    border: 2px solid var(--dark);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    padding: 1.5px .5rem;
+    border-radius: 5px;
+
+}
+
+.main-screen .project {
+    padding: 10vh 5vw 6vw 0vw;
+}
+
+.main-screen .footer {
+    padding: 10vh 5vw 6vw 0vw;
+}
+.main-screen .footer span{
+    color: #598049;
 }
