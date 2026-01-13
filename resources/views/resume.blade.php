@@ -102,10 +102,109 @@
                             </div>
                         </div>
                     </div>
+
+                    <a href="#" class="more">
+                        <span>View Full Resume</span>
+                        <i class="mdi mdi-arrow-top-right"></i>
+                    </a>
                 </section>
 
                 <section class="project">
+                    <div class="project-list">
+                        
+                        <a href="#" class="projectnav">
+                            <div class="first">
+                                <img src="{{ asset('default.png') }}" alt="thumbnail" class="thumbnail"/>
+                                <div class="info">
+                                    <div class="name">CondoMart Landing Page</div>
+                                    <div class="badget-list">
+                                        <div class="badget">Laravel</div>
+                                    </div>
+                                    <div class="desc">
+                                        Web app for visualizing personalized Spotify data.
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="secondary">
+                                <div>
+                                    <div class="label">What I Did</div>
+                                    <div class="info">
+                                        <div class="points">Designed and implemented REST APIs using Laravel</div>
+
+                                        <div class="points">Built admin dashboard with Vue 3 + Tailwind</div>
+
+                                        <div class="points">Implemented role-based access control</div>
+
+                                        <div class="points">Optimized database queries for large datasets</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="label">Impacts</div>
+                                    <div class="info">
+                                        <div class="points">Designed and implemented REST APIs using Laravel</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="more">
+                                <i class="mdi mdi-unfold-more-horizontal"></i>
+                                <span>Hover to Explore</span>
+                            </div>
+                            
+                        </a>
+
+                        <a href="#" class="projectnav">
+                            <div class="first">
+                                <img src="{{ asset('default.png') }}" alt="thumbnail" class="thumbnail"/>
+                                <div class="info">
+                                    <div class="name">CondoMart Landing Page</div>
+                                    <div class="badget-list">
+                                        <div class="badget">Laravel</div>
+                                    </div>
+                                    <div class="desc">
+                                        Web app for visualizing personalized Spotify data.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="secondary">
+                                <div>
+                                    <div class="label">What I Did</div>
+                                    <div class="info">
+                                        <div class="points">Designed and implemented REST APIs using Laravel</div>
+
+                                        <div class="points">Built admin dashboard with Vue 3 + Tailwind</div>
+
+                                        <div class="points">Implemented role-based access control</div>
+
+                                        <div class="points">Optimized database queries for large datasets</div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="label">Impacts</div>
+                                    <div class="info">
+                                        <div class="points">Designed and implemented REST APIs using Laravel</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="more">
+                                <i class="mdi mdi-unfold-more-horizontal"></i>
+                                <span>Hover to Explore</span>
+                            </div>
+                            
+                        </a>
+                    </div>
+
+                    <a href="#" class="more">
+                        <span>View Full Resume</span>
+                        <i class="mdi mdi-arrow-top-right"></i>
+                    </a>
                 </section>
 
                 <section class="footer">
