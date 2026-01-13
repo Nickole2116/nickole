@@ -202,7 +202,7 @@
                     </div>
 
                     <a href="#" class="more">
-                        <span>View Full Resume</span>
+                        <span>View All Archieved Projects</span>
                         <i class="mdi mdi-arrow-top-right"></i>
                     </a>
                 </section>
