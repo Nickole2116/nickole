@@ -50,6 +50,17 @@ body {
     display: flex;
     align-items: start;
 }
+.main-screen-list {
+    position: fixed;
+    background: #181c17d4;
+    backdrop-filter: blur(10px);
+    max-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
 .main-screen > .left {
     flex: 1;
     flex-basis: 40%;
@@ -341,4 +352,93 @@ body {
 }
 .main-screen .footer span{
     color: #598049;
+}
+
+
+/* Projects listing Page */
+.main-screen-list {
+    padding: 3rem 5vw;
+}
+.main-screen-list .nav {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding-bottom: 1rem;
+}
+.main-screen-list .nav > a {
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.main-screen-list .nav > a i{
+    font-size: 1.5rem;
+    color: #93ee00;
+}
+.main-screen-list .nav > a span{
+    font-size: 1.25rem;
+    color: #93ee00;
+}
+.main-screen-list .nav .title {
+    font-size: 2rem;
+    color: #f2f2f2;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.pro-listing {
+    max-height: calc(100vh - 158px);
+    overflow: auto;
+}
+.pro-listing .pro {
+    width: 30%;
+    background: #2c2e2c7b;
+    margin: 3px;
+    border-radius: 8px;
+}
+.pro .year {
+    padding: 1rem 1.25rem .75rem;
+    color: #f2f2f285;
+    font-weight: 500;
+    font-size: .875rem;
+    letter-spacing: 1px;
+}
+
+.pro .thumb {
+    width: 100%;
+    height: auto;
+    background: #131c10;
+}
+
+.pro .thumb img.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.pro .builds {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+}
+
+.pro .builds > div {
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7bf74d;
+    letter-spacing: 1px;
+}
+
+.pro .name {
+    color: #f2f2f2;
+    font-size: 1.125rem;
+    margin-bottom: .25rem;
+    padding: 0rem 1.25rem;
+}
+.pro .desc {
+    padding: 0rem 1.25rem .5rem;
+    font-size: .813rem;
 }

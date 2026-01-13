@@ -11,4 +11,7 @@ class ResumeController extends Controller
 
         return view('resume', ['test' => 'test123']);
     }
+    public function projects(Request $request) {
+        return view('projects', ['test' => '11']);
+    }
 }
